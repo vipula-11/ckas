@@ -43,7 +43,7 @@
 <section id="left-sidebar">
 
     <div class="logo">
-        <a href="#intro" class="link-scroll"><img src="img/gglogo.png" alt="CKAS Tanks"></a>
+        <a href="#intro" class="link-scroll"><img src="img/ckaslogo.png" alt="CKAS Tanks"></a>
     </div>
     <!-- .logo -->
 
@@ -53,8 +53,8 @@
 
     <ul id="main-menu">
         <li id="menu-item-text" class="menu-item scroll"><a href="#text">Introduction</a></li>
-        <li id="menu-item-carousel" class="menu-item scroll"><a href="#carousel">Carousel</a></li>
-        <li id="menu-item-grid" class="menu-item scroll"><a href="#grid">Grid</a></li>
+        <li id="menu-item-carousel" class="menu-item scroll"><a href="#carousel">Resources</a></li>
+        <li id="menu-item-grid" class="menu-item scroll"><a href="#grid">Rules</a></li>
         <li id="menu-item-featured" class="menu-item scroll"><a href="#featured">About Developers</a></li>
 
     </ul>
@@ -67,7 +67,7 @@
 <section id="main-content" class="clearfix">
 
 <article id="intro" class="section-wrapper clearfix active" data-custom-background-img="img/bg5.jpg">
-    <div style="position: absolute;" class="content-wrapper clearfix">
+    <div style="position: absolute; background: rgba(0,0,0,0.2);" class="content-wrapper clearfix">
         <div class="col-sm-10 col-md-9 pull-right">
 
             <section class="feature-text">
@@ -86,22 +86,18 @@
 <!-- .section-wrapper -->
 
 <article id="text" class="section-wrapper clearfix" data-custom-background-img="img/bg1.jpg">
-    <div style="position: absolute;" class="content-wrapper clearfix">
+    <div style="position: absolute; background: rgba(0,0,0,0.2);" class="content-wrapper clearfix">
         <div class="col-sm-10 col-md-9 pull-right">
 
-            <h1 class="section-title">Text Content</h1>
+            <h1 class="section-title">The Challenge</h1>
 
-            <p class="feature-paragraph"><img src="img/transp-image5b.png" data-img-src="img/transp-image5b.png"
-                                              class="pull-right" alt="Lorem Ipsum">Etiam at ligula sit amet arcu laoreet
-                consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="#carousel">Suspendisse
-                    molestie lorem odio</a>, sit amet. Laoreet consequat. Duis dictum lorem metus, vitae dapibus.</p>
-            <h4>Duis dictum lorem metus</h4>
+            <p class="feature-paragraph"><img src="img/trophies.png" data-img-src="img/trophies.png"
+                                              class="pull-right" alt="Trophy" height="100">
 
-            <p>Suspendisse molestie lorem odio, sit amet. Duis
-                dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse
-                molestie lorem odio. Etiam scelerisque lacus tempor, rhoncus diam vel,
-                gravida felis. Fusce tristique sem et leo. Pellentesque sed malesuada
-                turpis. Quisque eget lacus sit amet dui.</p>
+            <p>The Challenge Given the nature of the randomly generated map, the real challenge is in getting a
+                well-trained AI that is competent in multi-objective optimization. In particular the AI has to consider
+                between, collecting coins, killing opponents, taking hits, staying still etc. Our goal is to make an AI
+                that considers all these requirements and comes up with the best strategy possible!</p>
 
             <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-1');"
                   class="btn btn-outline-inverse btn-sm">read more</a></p>
@@ -158,18 +154,19 @@
 <!-- .section-wrapper -->
 
 <article id="carousel" class="section-wrapper clearfix modified-height"
-         data-custom-background-img="img/bg6.jpg">
-    <div style="position: absolute; height: 70%;" class="content-wrapper clearfix">
+         data-custom-background-img="img/bg6.jpg" style="">
+    <div style="position: absolute; height: 70%; background: rgba(0,0,0,0.2);" class="content-wrapper clearfix">
 
         <div id="features-carousel" class="carousel slide with-title-indicators max-height" data-height-percent="70"
              data-ride="carousel">
 
             <!-- Indicators - slide navigation -->
-            <ol class="carousel-indicators title-indicators">
-                <li data-target="#features-carousel" data-slide-to="0" class="">Lorem Ipsum</li>
-                <li class="" data-target="#features-carousel" data-slide-to="1">Suspendisse</li>
-                <li class="active" data-target="#features-carousel" data-slide-to="2">Maecenas</li>
-                <li class="" data-target="#features-carousel" data-slide-to="3">Scelerisque</li>
+            <ol class="carousel-indicators title-indicators" style=" background: rgba(0,0,0,0.2); ">
+                <li data-target="#features-carousel" data-slide-to="0" class="">Coins</li>
+                <li class="" data-target="#features-carousel" data-slide-to="1">Life Packs</li>
+                <li class="active" data-target="#features-carousel" data-slide-to="2">Water</li>
+                <li class="" data-target="#features-carousel" data-slide-to="3">Brick</li>
+                <li class="" data-target="#features-carousel" data-slide-to="4">Stone</li>
             </ol>
 
             <!-- Wrapper for slides -->
@@ -177,32 +174,33 @@
 
                 <div class="item">
                     <div style="height: 447px;" class="carousel-text-content">
-                        <img src="img/transp-image1.png" class="icon" alt="Lorem Ipsum">
+                        <img src="img/coins.png" class="icon" alt="Coins">
 
-                        <h2 class="title">Lorem Ipsum</h2>
+                        <h2 class="title">Coins</h2>
 
-                        <p>Suspendisse molestie lorem odio, sit amet. Duis
-                            dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse
-                            molestie lorem odio.</p>
+                        <p>Collect Much as Posible ! </p>
 
                         <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-2');"
                               class="btn btn-outline-inverse btn-sm">read more</a></p>
 
                         <div class="content-to-populate-in-modal" id="modal-content-2">
-                            <h1>Lorem Ipsum</h1>
+                            <h1>Acquiring coins</h1>
 
-                            <p><img src="img/transp-image1.png"
-                                    data-img-src="img/transp-image1.png"
-                                    class="rounded_border hover_effect pull-left" alt="Lorem Ipsum">Etiam at ligula sit
-                                amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec.
-                                <a href="#">Suspendisse molestie lorem odio</a>, sit amet. </p>
+                            <p><img src="img/coins.png"
+                                    data-img-src="img/coins.png"
+                                    class="hover_effect pull-left">The players are
+                                supposed to collect Coins by moving to the cell where the coin pile is. </p>
 
-                            <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec.
-                                Suspendisse molestie lorem odio, sit amet.</p>
+                            <p>When a player collect a pile of coins, their coin count and the point count will get
+                                increased by that amount.</p>
 
-                            <p>Suspendisse molestie lorem odio, sit amet.
-                                Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse
-                                molestie lorem odio test.</p>
+                            <p>How will coins appear on the map.</p>
+                            <ul>
+                                <li>Random treasures</li>
+                                <li>Spoils of war</li>
+                            </ul>
+
+                            <p>When players life reach 0% his/her coins will drop on where player was</p>
                         </div>
                         <!-- #modal-content-2 -->
                     </div>
@@ -211,13 +209,11 @@
 
                 <div style="" class="item">
                     <div style="height: 447px;" class="carousel-text-content">
-                        <img src="img/transp-image6.png" class="icon" alt="Lorem Ipsum">
+                        <img src="img/life.png" class="icon" alt="Life Pack">
 
-                        <h2 class="title">Suspendisse molestie</h2>
+                        <h2 class="title">Life Pack</h2>
 
-                        <p>Etiam at ligula sit amet arcu laoreet
-                            consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec.
-                            Duis dictum lorem metus.</p>
+                        <p>More Life, More chances to Servive on the Arena</p>
 
                         <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-3');"
                               class="btn btn-outline-inverse btn-sm">read more</a></p>
@@ -225,11 +221,10 @@
                         <div class="content-to-populate-in-modal" id="modal-content-3">
                             <h1>Suspendisse molestie</h1>
 
-                            <p><img src="img/transp-image6.png"
-                                    data-img-src="img/transp-image6.png"
-                                    class="rounded_border hover_effect pull-left" alt="Lorem Ipsum">Etiam at ligula sit
-                                amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec.
-                                <a href="#">Suspendisse molestie lorem odio</a>, sit amet. </p>
+                            <p><img src="img/life.png"
+                                    data-img-src="img/life.png"
+                                    class="hover_effect pull-left" width="150" height="150">Expand your life on Arena
+                            </p>
 
                             <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec.
                                 Suspendisse molestie lorem odio, sit amet.</p>
@@ -245,14 +240,11 @@
 
                 <div style="" class="item active">
                     <div style="height: 447px;" class="carousel-text-content">
-                        <img src="a_data/transp-image7.png" class="icon" alt="Lorem Ipsum">
+                        <img src="img/water.png" class="icon" alt="water">
 
-                        <h2 class="title">Maecenas id dolor</h2>
+                        <h2 class="title">Water</h2>
 
-                        <p>Fusce erat augue, fermentum sit amet congue a,
-                            ullamcorper ac enim. Maecenas id dolor imperdiet, mollis felis ut,
-                            pellentesque ante. Sed id congue arcu. Nulla eget commodo sem.
-                            Suspendisse suscipit, sem ac.</p>
+                        <p>For Human But not for Tanks</p>
 
                         <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-4');"
                               class="btn btn-outline-inverse btn-sm">read more</a></p>
@@ -260,9 +252,9 @@
                         <div class="content-to-populate-in-modal" id="modal-content-4">
                             <h1>Maecenas id dolor</h1>
 
-                            <p><img src="a_data/transp-image7.png"
-                                    data-img-src="assets/images/other_images/transp-image7.png"
-                                    class="rounded_border hover_effect pull-left" alt="Lorem Ipsum">Etiam at ligula sit
+                            <p><img src="img/water.png"
+                                    data-img-src="img/water.png"
+                                    class="hover_effect pull-left" alt="Lorem Ipsum">Etiam at ligula sit
                                 amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec.
                                 <a href="#">Suspendisse molestie lorem odio</a>, sit amet. </p>
 
@@ -282,7 +274,7 @@
                     <div style="height: 447px;" class="carousel-text-content">
                         <img src="a_data/transp-image4.png" class="icon" alt="Lorem Ipsum">
 
-                        <h2 class="title">Sed scelerisque</h2>
+                        <h2 class="title">Bricks</h2>
 
                         <p>Aenean a est fringilla, malesuada eros vel,
                             condimentum augue. Sed lorem sapien, vestibulum quis nisl volutpat,
@@ -298,6 +290,41 @@
                             <p><img src="a_data/transp-image4.png"
                                     data-img-src="assets/images/other_images/transp-image4.png"
                                     class="rounded_border hover_effect pull-left" alt="Lorem Ipsum">Etiam at ligula sit
+                                amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec.
+                                <a href="#">Suspendisse molestie lorem odio</a>, sit amet. </p>
+
+                            <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec.
+                                Suspendisse molestie lorem odio, sit amet.</p>
+
+                            <p>Suspendisse molestie lorem odio, sit amet.
+                                Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse
+                                molestie lorem odio test.</p>
+                        </div>
+                        <!-- #modal-content-5 -->
+                    </div>
+                </div>
+                <!-- .item -->
+
+                <div style="" class="item">
+                    <div style="height: 447px;" class="carousel-text-content">
+                        <img src="img/stone.png" class="icon" alt="stone">
+
+                        <h2 class="title">Stones</h2>
+
+                        <p>Aenean a est fringilla, malesuada eros vel,
+                            condimentum augue. Sed lorem sapien, vestibulum quis nisl volutpat,
+                            fermentum adipiscing massa. Cras ac faucibus nisl. Proin ac convallis
+                            sapien. </p>
+
+                        <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-stone');"
+                              class="btn btn-outline-inverse btn-sm">read more</a></p>
+
+                        <div class="content-to-populate-in-modal" id="modal-content-stone">
+                            <h1>Stone Block All</h1>
+
+                            <p><img src="img/stone.png"
+                                    data-img-src="img/stone.png"
+                                    class="hover_effect pull-left" alt="Lorem Ipsum">Etiam at ligula sit
                                 amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec.
                                 <a href="#">Suspendisse molestie lorem odio</a>, sit amet. </p>
 
@@ -329,10 +356,10 @@
 <!-- .section-wrapper -->
 
 <article id="grid" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg2.jpg">
-    <div style="position: static;" class="content-wrapper clearfix">
+    <div style="position: static; background: rgba(0,0,0,0.2);" class="content-wrapper clearfix">
         <div class="col-sm-11 col-md-10 pull-right">
 
-            <h1 class="section-title">Grid</h1>
+            <h1 class="section-title">Game Rules</h1>
 
             <!-- grid -->
             <section class="grid row clearfix clearfix-for-2cols">
@@ -414,10 +441,10 @@
 <!-- .section-wrapper -->
 
 <article id="featured" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg3.jpg">
-    <div style="position: absolute;" class="content-wrapper clearfix">
+    <div style="position: absolute; background: rgba(0,0,0,0.2); " class="content-wrapper clearfix">
         <div class="col-sm-11 pull-right">
 
-            <h1 class="section-title">About Us</h1>
+            <h1 class="section-title">About Developers</h1>
 
             <!-- feature columns -->
             <section class="feature-columns row clearfix">
@@ -425,7 +452,7 @@
                 <article class="feature-col col-md-4 col-md-push-2">
                     <a href="" onclick="populate_and_open_modal(event, 'modal-content-6');" class="thumbnail linked">
                         <div class="image-container">
-                            <img src="img/vip.jpg" data-img-src="assets/images/other_images/project-3.jpg"
+                            <img src="img/vip.jpg" style="opacity: 1" data-img-src="img/vip.jpg"
                                  class="item-thumbnail" alt="Vipula Dissanayake">
                         </div>
                         <div class="caption">
@@ -441,13 +468,9 @@
 
                         <h1>Vipula Sandaruwan Dissanayake</h1>
 
-                        <p>Nullam ac rhoncus. Aliquam adipiscing eros non
-                            elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat.
-                            Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse
-                            molestie lorem odio, sit amet. </p>
+                        <p>Undergraduate of Department of Computer Science & Engineering,<br>
+                            University of Moratuwa</p>
 
-                        <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse
-                            molestie lorem odio, sit amet.</p>
 
                         <a href="https://www.facebook.com/vipula.dissanayake" target="_blank" title="Facebook"><img
                                 src="img/webicon-facebook-m.png" alt="Facebook"></a>
@@ -465,7 +488,7 @@
                 <article class="feature-col col-md-4 col-md-push-2">
                     <a href="" onclick="populate_and_open_modal(event, 'modal-content-7');" class="thumbnail linked">
                         <div class="image-container">
-                            <img src="img/sachith.jpg" data-img-src="assets/images/other_images/project-2.jpg"
+                            <img src="img/sachith.jpg" data-img-src="img/sachith.png" style="opacity: 1"
                                  class="item-thumbnail" alt="Sachith">
                         </div>
                         <div class="caption">
@@ -480,10 +503,8 @@
 
                         <h1>Sachith Hasaranga Seneviratne</h1>
 
-                        <p>Nullam ac rhoncus. Aliquam adipiscing eros non
-                            elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat.
-                            Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse
-                            molestie lorem odio, sit amet. </p>
+                        <p>Undergraduate of Department of Computer Science & Engineering,<br>
+                            University of Moratuwa</p>
 
                         <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse
                             molestie lorem odio, sit amet.</p>
@@ -518,7 +539,6 @@
     <!-- .content-wrapper -->
 </article>
 <!-- .section-wrapper -->
-
 
 
 </section>
